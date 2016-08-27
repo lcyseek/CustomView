@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:text="给Image添加边框"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#cccccc"
+                    android:src="@drawable/meinv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.example.imageview.view.FrameImageView
+                    android:background="#cccccc"
+                    android:padding="10dp"
+                    android:id="@+id/frameImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/meinv"/>
+
+                <ImageView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:paddingLeft="10dp"
+                    android:id="@+id/iv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.example.imageview.view.RoundImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dushi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.example.imageview.view.RoundImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dushi"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <com.example.imageview.view.RoundImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dushi"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:type="round"
+                    app:borderRadius="60dp"/>
+
+                <com.example.imageview.view.RoundImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/dushi"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:type="round"
+                    app:borderRadius="90dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.example.imageview.view.RoundImageView
+                    android:layout_margin="10dp"
+                    android:src="@drawable/boduo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:type="round"
+                    app:borderRadius="295dp"/>
+                
+                <com.example.imageview.view.CircleImageView
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:src="@drawable/dushi"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
