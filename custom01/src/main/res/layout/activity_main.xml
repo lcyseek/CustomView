@@ -29,4 +29,11 @@
     </LinearLayout>
 
 
+    <Button
+        android:onClick="test"
+        android:text="测试View 流程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
 </LinearLayout>

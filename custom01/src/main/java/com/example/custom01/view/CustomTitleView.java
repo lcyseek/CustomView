@@ -43,8 +43,12 @@ public class CustomTitleView extends View {
     }
 
     //为了适配wrap_content
+    // getWidth(): View在設定好佈局後整個View的寬度。
+    //getMeasuredWidth(): 對View上的內容進行測量後得到的View內容佔據的寬度
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+        Log.i(TAG, "onMeasure: "+getMeasuredWidth()+"|"+getMeasuredHeight());
 
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);

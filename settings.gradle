@@ -1,1 +1,1 @@
-include ':app', ':custom01', ':progressbar' ,':imageview'
+include ':app', ':progressbar', ':custom', ':imageview', ':measure'

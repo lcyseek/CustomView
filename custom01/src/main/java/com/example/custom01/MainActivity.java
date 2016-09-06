@@ -1,7 +1,9 @@
 package com.example.custom01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 /**
  * 自定义View步骤
@@ -20,4 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void test(View view) {
+        startActivity(new Intent(this,MyViewActivity.class));
+    }
 }
